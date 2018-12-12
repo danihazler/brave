@@ -1,32 +1,72 @@
-.App {
-  text-align: center;
+*, *:before, *:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+html, body {
+  color: #fff;
+  font-family: "Arial", sans-serif;
+  line-height: 1.3;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+section {
+  height: 100vh;
+  /* background-size: cover;
+  background-attachment: fixed; */
+}
+/* ********** COMMON STYLE ********** */
+.flex {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+}
+.f-column {
+  flex-direction: column;
+}
+/* ********** ANIMATION CLASSES ********** */
+.fade-in {
+  opacity: 1;
+  transform: scale(1);
+  transition: all 1s ease-in;
+}
+.slide-up{
+  opacity: 0;
+  transform: translateY(-100%);
+  transition: all 1s ease-out;
+}
+/* ********** NAV / MENU ********** */
+nav.flex {
+  position: relative;
+  animation: slide-left 1.5s linear;
+  -webkit-animation: slide-left 1.5s linear;
+}
+.nav-menu {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  margin-right: 12px;
+}
+.nav-burger span {
+  display: block;
+  background: #fff;
+  border-radius: 3px;
+  margin-bottom: 4px;
+  position: relative;
+  height: 3px;
+  width: 19px;
+}
+.nav-burger span:nth-child(2) {
+  transform: translateX(25%);
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@-webkit-keyframes slide-left {
+  0%   {
+    font-style: italic;
+    opacity: 0;
+    right:-300px;
   }
-  to {
-    transform: rotate(360deg);
+  100% {
+    font-style: italic;
+    opacity: 1;
+    right:0px;
   }
 }

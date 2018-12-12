@@ -1,0 +1,133 @@
+/* ********** HEADER ********** */
+header {
+  position: absolute;
+  top: 4rem;
+  right: 4rem;
+  z-index: 1;
+}
+/* ********** INTRO ********** */
+div.white-bg {
+  background-color: #fff;
+  padding: 1rem;
+  height: 100vh;
+  width: 100vw;
+}
+section.intro {
+  background: url('../../assets/images/stadium.png') no-repeat center center fixed;
+  background-size: cover;
+  /* border-radius: 20%; */
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+/* ******** LOGO *********** */
+/* *************************** */
+#intro-logo img {
+  animation: zoom-out 1s;
+  -webkit-animation: zoom-out 1s;
+}
+@-webkit-keyframes zoom-out {
+  0%{
+    opacity: 0;
+    transform: scale(5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+/* ****** GREETING *********** */
+/* *************************** */
+.greeting {
+  font-size: 3rem;
+  letter-spacing: 1px;
+  position: absolute;
+  bottom: 75px;
+  left: 100px;
+}
+span.dot {
+  background: #fff;
+  border-radius: 100%;
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+}
+h2 {
+  font-family: "Arial-black", sans-serif;
+  font-size: 7rem;
+  position: relative;
+  animation: slide-right 1s linear;
+  -webkit-animation: slide-right 1s linear;
+}
+
+@-webkit-keyframes slide-right {
+  0%   {
+    font-style: italic;
+    left:-400px;
+  }
+  100% {
+    font-style: italic;
+    left:0px;
+  }
+}
+
+#l {
+  display:inline-block;
+  /* animation: kick 1s 1s;
+  animation-direction:alternate;
+  -webkit-animation: kick 1s 1s;
+  -webkit-animation-direction:alternate; */
+}
+#o {
+  display: inline-block;
+  position: relative;
+  /* animation: roll 1s ease-in 1.5s;
+  -webkit-animation: roll 1s ease-in 1.5s; */
+}
+
+/* @-webkit-keyframes kick {
+  0%{
+  }
+  50%{
+    transform:rotate(40deg);
+    transform-origin:top;
+  }
+  100%{
+    transform:rotate(-30deg);
+    transform-origin:top;
+  }
+}
+@-webkit-keyframes roll {
+  0% {
+    left: 0px;
+  }
+  25% {
+    transform: translate(20px, 10px);
+    left: 0px;
+  }
+  50% {
+    transform: translate(40px, -16px);
+    left: 500px;
+  }
+  55% {
+    transform: translate(60px, -26px);
+    left: 500px;
+  }
+  70% {
+    transform: translate(80px, -44px);
+    left: 500px;
+  }
+  100% {
+    transform: translate(0px, 0px);
+    left: 0px;
+  }
+} */
+
+#dot{
+  display: inline-block;
+  background: #fff;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  opacity: 0;
+}
