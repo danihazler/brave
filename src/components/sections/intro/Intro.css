@@ -73,19 +73,19 @@ h2 {
 
 #l {
   display:inline-block;
-  /* animation: kick 1s 1s;
+  animation: kick 1s 1s;
   animation-direction:alternate;
   -webkit-animation: kick 1s 1s;
-  -webkit-animation-direction:alternate; */
+  -webkit-animation-direction:alternate;
 }
 #o {
   display: inline-block;
   position: relative;
-  /* animation: roll 1s ease-in 1.5s;
-  -webkit-animation: roll 1s ease-in 1.5s; */
+  animation: roll 1s ease-in 1.5s;
+  -webkit-animation: roll 1s ease-in 1.5s;
 }
 
-/* @-webkit-keyframes kick {
+@-webkit-keyframes kick {
   0%{
   }
   50%{
@@ -121,7 +121,7 @@ h2 {
     transform: translate(0px, 0px);
     left: 0px;
   }
-} */
+}
 
 #dot{
   display: inline-block;
@@ -130,4 +130,11 @@ h2 {
   height: 20px;
   width: 20px;
   opacity: 0;
+  animation: fade-in 1s 2.5s forwards;
+  -webkit-animation: fade-in 1s 2.5s forwards;
+}
+
+@keyframes fade-in {
+  from{ opacity: 0;}
+  to{ opacity: 1;}
 }
