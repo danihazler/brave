@@ -5,11 +5,6 @@ import './Showreel.css';
 import blackLogo from "../../../assets/images/black_logo.png";
 import showVideo from "../../../assets/videos/showreel.mp4";
 
-const LogoAnime = posed.img({
-  hidden: {opacity: 0},
-  visible: {opacity:1}
-})
-
 class Showreel extends Component {
   state = {
     isVisible: false
@@ -29,13 +24,18 @@ class Showreel extends Component {
         <div className="curtain flex f-column">
           <div className="navbar flex">
             <div className="nav-logo"
-              data-aos="slide-right"
-              data-aos-duration="3000"
+              data-aos="fade-right"
+              data-aos-duration="2000"
+              data-aos-once="true"
             >
-              <LogoAnime src={blackLogo} alt="Lagardere Logo" />
+              <img src={blackLogo} alt="Lagardere Logo" />
             </div>
             <div className="_header">
-              <nav className="flex">
+              <nav className="flex"
+                data-aos="fade-left"
+                data-aos-duration="2000"
+                data-aos-once="true"
+              >
                 <div className="nav-menu">
                   Menu
                 </div>
@@ -47,7 +47,14 @@ class Showreel extends Component {
               </nav>
             </div>
           </div>
-          <video id="showreel" width="720" height="480" controls>
+          <video
+            id="showreel"
+            width="720"
+            height="480"
+            controls
+            data-aos="zoom-in"
+            data-aos-delay="1000"
+            >
             <source src={showVideo} type="video/mp4" />
               Your browser does not support HTML5.
           </video>
