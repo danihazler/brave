@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './Intro.css';
 
+import whiteLogo from "../../../assets/images/white_logo.png"
+
 const Intro = () => {
   return(
     <div>
@@ -19,7 +21,7 @@ const Intro = () => {
       <div className="white-bg">
         <section className="intro flex f-column">
           <div id="intro-logo">
-            <img src={require("../../assets/images/white_logo.png")} alt="Lagardere Logo"/>
+            <img src={whiteLogo} alt="Lagardere Logo"/>
           </div>
           <div className="greeting">
             <h2>Hel

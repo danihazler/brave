@@ -1,0 +1,49 @@
+/* ********** SHOWREEL ********** */
+.showreel{
+  color: #000;
+}
+/* ********** CURTAIN ********** */
+ .curtain {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: #fff;
+  overflow: hidden;
+  text-align: center;
+}
+.curtain:before, .curtain:after {
+  position: absolute;
+  top: 140px;
+  width: 50%;
+  height: 80%;
+  background-color: #fff;
+  font-size: 6rem;;
+  transition: -webkit-transform .8s ease-out;
+  transition: transform .8s ease-out;
+}
+.curtain:before,
+.curtain:after {
+  font-family: "Arial-black", sans-serif;
+  padding-top: 10%;
+}
+.curtain:before {
+  content: 'SHOW';
+  left: 0;
+  text-align: right;
+  padding-right: 2px;
+  z-index: 1;
+}
+.curtain:after {
+  content: 'REEL';
+  right: 0;
+  text-align: left;
+  padding-left: 2px;
+}
+.curtain:hover:before {
+  -webkit-transform: translate3d(-101%, 0, 0);
+  transform: translate3d(-101%, 0, 0);
+}
+.curtain:hover:after {
+  -webkit-transform: translate3d(101%, 0, 0);
+  transform: translate3d(101%, 0, 0);
+}

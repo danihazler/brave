@@ -13,7 +13,7 @@ div.white-bg {
   width: 100vw;
 }
 section.intro {
-  background: url('../../assets/images/stadium.png') no-repeat center center fixed;
+  background: url('../../../assets/images/stadium.png') no-repeat center center fixed;
   background-size: cover;
   /* border-radius: 20%; */
   position: relative;

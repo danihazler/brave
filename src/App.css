@@ -70,3 +70,23 @@ nav.flex {
     right:0px;
   }
 }
+/* ********* SHOWREEL NAV ********** */
+.showreel .nav-burger span {
+  background: black;
+}
+.navbar.flex {
+  justify-content: space-between;
+  margin-top: -120px;
+  padding: 1rem 4rem;
+  width: 100%;
+}
+.nav-logo img {
+  /* opacity: 0; */
+  transform: scale(.7);
+  transition: all 1s;
+  width: 200px;
+}
+.fade-in img {
+  opacity: 1;
+  transform: scale(1);
+}
