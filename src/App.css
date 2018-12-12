@@ -82,11 +82,11 @@ nav.flex {
 }
 .nav-logo img {
   /* opacity: 0; */
-  transform: scale(.7);
+  /* transform: scale(.7); */
   transition: all 1s;
   width: 200px;
 }
-.fade-in img {
+/* .fade-in img {
   opacity: 1;
   transform: scale(1);
-}
+} */
