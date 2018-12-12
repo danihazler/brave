@@ -17,13 +17,13 @@
   width: 50%;
   height: 80%;
   background-color: #fff;
-  font-size: 6rem;;
   transition: -webkit-transform .8s ease-out;
   transition: transform .8s ease-out;
 }
 .curtain:before,
 .curtain:after {
-  font-family: "Arial-black", sans-serif;
+  font-family: 'PureHeart-Regular', "Arial-black", sans-serif;
+  font-size: 12rem;
   padding-top: 10%;
 }
 .curtain:before {

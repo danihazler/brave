@@ -1,3 +1,12 @@
+@font-face {
+  font-family: 'PureHeart-Regular';
+  src: url('./fonts/PureHeart/PureHeart-Regular.otf');
+}
+@font-face {
+  font-family: 'PureHeart-Regular';
+  src: url('./fonts/PureHeart/PureHeart-Regular.ttf');
+}
+
 *, *:before, *:after {
   padding: 0;
   margin: 0;
