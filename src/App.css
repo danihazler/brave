@@ -40,6 +40,11 @@ ul {
   transform: scale(1);
   transition: all 1s ease-in;
 }
+.fade-out {
+  opacity: 0;
+  transform: scale(.5);
+  transition: all 1s ease-out;
+}
 .slide-up{
   opacity: 0;
   transform: translateY(-100%);
@@ -93,12 +98,6 @@ nav.flex {
   width: 100%;
 }
 .nav-logo img {
-  /* opacity: 0; */
-  /* transform: scale(.7); */
   transition: all 1s;
   width: 200px;
 }
-/* .fade-in img {
-  opacity: 1;
-  transform: scale(1);
-} */

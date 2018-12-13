@@ -6,7 +6,7 @@ import whiteLogo from "../../../assets/images/white_logo.png"
 const Intro = () => {
   return(
     <div>
-      <header className="_introScene">
+      <header id="_header-trigger">
         <nav className="flex">
           <div className="nav-menu">
           Menu

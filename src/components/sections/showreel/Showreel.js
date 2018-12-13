@@ -6,17 +6,6 @@ import blackLogo from "../../../assets/images/black_logo.png";
 import showVideo from "../../../assets/videos/showreel.mp4";
 
 class Showreel extends Component {
-  state = {
-    isVisible: false
-  }
-
-  componentDidMount(){
-    setTimeout(()=>{
-      this.setState({
-        isVisible: !this.state.isVisible
-      })
-    }, 1000)
-  }
 
   render(){
     return (
@@ -47,7 +36,6 @@ class Showreel extends Component {
               </nav>
             </div>
           </div>
-          <span id="line-h1"></span>
           <div className="curtain-left">
             <div id="show" className="flex">
               <span
