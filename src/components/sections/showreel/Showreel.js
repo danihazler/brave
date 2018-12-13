@@ -47,6 +47,31 @@ class Showreel extends Component {
               </nav>
             </div>
           </div>
+          <span id="line-h1"></span>
+          <div className="curtain-left">
+            <div id="show" className="flex">
+              <span
+                data-aos="fade-down"
+                data-aos-duration="1000"
+              >S
+              </span>
+              <span
+                data-aos="fade-up"
+                data-aos-duration="1000"
+              >H
+              </span>
+              <span
+                data-aos="fade-down"
+                data-aos-duration="1000"
+              >O
+              </span>
+              <span
+                data-aos="fade-up"
+                data-aos-duration="1000"
+              >W
+              </span>
+            </div>
+          </div>
           <video
             id="showreel"
             width="720"
@@ -58,6 +83,32 @@ class Showreel extends Component {
             <source src={showVideo} type="video/mp4" />
               Your browser does not support HTML5.
           </video>
+          <div className="curtain-right">
+            <div id="reel" className="flex">
+              <span
+                data-aos="fade-down"
+                data-aos-duration="1000"
+              >
+              R
+              </span>
+              <span
+                data-aos="fade-up"
+                data-aos-duration="1000"
+              >
+              E
+              </span>
+              <span
+                data-aos="fade-down"
+                data-aos-duration="1000"
+              >E
+              </span>
+              <span
+                data-aos="fade-up"
+                data-aos-duration="1000"
+              >L
+              </span>
+            </div>
+          </div>
         </div>
       </section>
     )

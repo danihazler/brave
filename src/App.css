@@ -22,6 +22,9 @@ section {
   /* background-size: cover;
   background-attachment: fixed; */
 }
+ul {
+  list-style: none;
+}
 /* ********** COMMON STYLE ********** */
 .flex {
   display: flex;
