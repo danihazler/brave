@@ -38,26 +38,31 @@ class Showreel extends Component {
           </div>
           <div className="curtain-left">
             <div id="show" className="flex">
-              <span
-                data-aos="fade-down"
-                data-aos-duration="1000"
-              >S
-              </span>
-              <span
-                data-aos="fade-up"
-                data-aos-duration="1000"
-              >H
-              </span>
-              <span
-                data-aos="fade-down"
-                data-aos-duration="1000"
-              >O
-              </span>
-              <span
-                data-aos="fade-up"
-                data-aos-duration="1000"
-              >W
-              </span>
+            <span
+            data-aos="fade-down"
+            data-aos-duration="1000"
+            >S
+            </span>
+            <span
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            >H
+            </span>
+            <span
+            data-aos="fade-down"
+            data-aos-duration="1000"
+            >O
+            </span>
+            <span
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            >W
+            </span>
+            </div>
+            <div id="arrows-left">
+              <span className="slide-arrow"></span>
+              <span className="slide-arrow"></span>
+              <span className="slide-arrow"></span>
             </div>
           </div>
           <video
@@ -71,18 +76,6 @@ class Showreel extends Component {
             <source src={showVideo} type="video/mp4" />
               Your browser does not support HTML5.
           </video>
-          <div className="flex">
-            <div id="arrows-right">
-              <span className="scroll-arrow"></span>
-              <span className="scroll-arrow"></span>
-              <span className="scroll-arrow"></span>
-            </div>
-            <div id="arrows-left">
-              <span className="scroll-arrow"></span>
-              <span className="scroll-arrow"></span>
-              <span className="scroll-arrow"></span>
-            </div>
-          </div>
           <div className="curtain-right">
             <div id="reel" className="flex">
               <span
@@ -107,6 +100,11 @@ class Showreel extends Component {
                 data-aos-duration="1000"
               >L
               </span>
+            </div>
+            <div id="arrows-right">
+            <span className="slide-arrow"></span>
+            <span className="slide-arrow"></span>
+            <span className="slide-arrow"></span>
             </div>
           </div>
         </div>

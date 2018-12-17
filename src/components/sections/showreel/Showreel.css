@@ -3,6 +3,11 @@
   color: #000;
   position: relative;
 }
+/* ********** SHOWREEL NAVBAR ********** */
+.showreel .navbar {
+  background-color: #fff;
+  z-index: 5;
+}
 /* ********** CURTAIN ********** */
  .curtain {
   width: 100%;
@@ -36,15 +41,24 @@
   justify-content: flex-start;
   z-index: 1;
 }
+.curtain:hover .curtain-left {
+  -webkit-transform: translate3d(-105%, 0, 0);
+  transform: translate3d(-105%, 0, 0);
+}
+.curtain:hover .curtain-right {
+  -webkit-transform: translate3d(105%, 0, 0);
+  transform: translate3d(105%, 0, 0);
+}
 div#show {
   justify-content: flex-end;
 }
 div#reel {
   justify-content: flex-start;
 }
-.scroll-arrow {
-  width: 90px;
-  height: 90px;
+.slide-arrow {
+  display: inline-block;
+  width: 500px;
+  height: 500px;
   border-right: 10px solid black;
   border-bottom: 10px solid black;
   animation: arrow-wave .5s infinite;
@@ -52,29 +66,41 @@ div#reel {
 }
 #arrows-left,
 #arrows-right {
+  bottom: 12%;
   display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
-  bottom: 40%;
+}
+#arrows-right span:nth-child(2),
+#arrows-right span:nth-child(3) {
+  margin-left: -25%;
+}
+#arrows-left span:first-child,
+#arrows-left span:nth-child(2) {
+  margin-right: -25%;
 }
 #arrows-left {
-  left: 3%;
+  right: -13%;
+  z-index: -1;
 }
-#arrows-right{
-  right: 3%;
+#arrows-right {
+  left: -13%;
+  z-index: -1;
 }
-#arrows-left .scroll-arrow {
+#arrows-right .slide-arrow {
+  transform: rotate(135deg);
+}
+#arrows-left .slide-arrow {
   transform: rotate(-45deg);
 }
-#arrows-right .scroll-arrow {
-  transform: rotate(-225deg);
-}
-.scroll-arrow:nth-child(1) {
+.slide-arrow:nth-child(1) {
   animation-delay: 0.1s;
 }
-.scroll-arrow:nth-child(2) {
+.slide-arrow:nth-child(2) {
   animation-delay: 0.2s;
 }
-.scroll-arrow:nth-child(3) {
+.slide-arrow:nth-child(3) {
   animation-delay: 0.3s;
 }
 
@@ -88,12 +114,4 @@ div#reel {
   100% {
     opacity: 1;
   }
-}
-.curtain:hover .curtain-left {
-  -webkit-transform: translate3d(-105%, 0, 0);
-  transform: translate3d(-105%, 0, 0);
-}
-.curtain:hover .curtain-right {
-  -webkit-transform: translate3d(105%, 0, 0);
-  transform: translate3d(105%, 0, 0);
 }
