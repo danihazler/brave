@@ -23,10 +23,19 @@ class App extends Component {
     .addTo(this.controller);
 
     new ScrollMagic.Scene({
-      triggerElement: ".greeting",
-      triggerHook: 0.5
+      triggerElement: "#_intro-trigger",
+      triggerHook: 0.5,
+      duration: 0
     })
     .setClassToggle("#intro-logo", "slide-up")
+    .addTo(this.controller);
+
+    new ScrollMagic.Scene({
+      triggerElement: "#_intro-trigger",
+      triggerHook: 0.4,
+      duration: 0
+    })
+    .setClassToggle(".greeting", "slide-up")
     .addTo(this.controller);
   }
 

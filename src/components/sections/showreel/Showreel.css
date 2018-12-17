@@ -1,6 +1,7 @@
 /* ********** SHOWREEL ********** */
 .showreel{
   color: #000;
+  position: relative;
 }
 /* ********** CURTAIN ********** */
  .curtain {
@@ -41,11 +42,58 @@ div#show {
 div#reel {
   justify-content: flex-start;
 }
+.scroll-arrow {
+  width: 90px;
+  height: 90px;
+  border-right: 10px solid black;
+  border-bottom: 10px solid black;
+  animation: arrow-wave .5s infinite;
+  animation-direction: alternate;
+}
+#arrows-left,
+#arrows-right {
+  display: flex;
+  position: absolute;
+  bottom: 40%;
+}
+#arrows-left {
+  left: 3%;
+}
+#arrows-right{
+  right: 3%;
+}
+#arrows-left .scroll-arrow {
+  transform: rotate(-45deg);
+}
+#arrows-right .scroll-arrow {
+  transform: rotate(-225deg);
+}
+.scroll-arrow:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.scroll-arrow:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.scroll-arrow:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+@keyframes arrow-wave {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: .5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .curtain:hover .curtain-left {
-  -webkit-transform: translate3d(-101%, 0, 0);
+  -webkit-transform: translate3d(-105%, 0, 0);
   transform: translate3d(-105%, 0, 0);
 }
 .curtain:hover .curtain-right {
-  -webkit-transform: translate3d(101%, 0, 0);
+  -webkit-transform: translate3d(105%, 0, 0);
   transform: translate3d(105%, 0, 0);
 }

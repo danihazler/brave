@@ -5,7 +5,7 @@ import whiteLogo from "../../../assets/images/white_logo.png"
 
 const Intro = () => {
   return(
-    <div>
+    <React.Fragment>
       <header id="_header-trigger">
         <nav className="flex">
           <div className="nav-menu">
@@ -23,6 +23,7 @@ const Intro = () => {
           <div id="intro-logo">
             <img src={whiteLogo} alt="Lagardere Logo"/>
           </div>
+          <span id="_intro-trigger"></span>
           <div className="greeting">
             <h2>Hel
               <span id="l">l</span>
@@ -32,7 +33,7 @@ const Intro = () => {
           </div>
         </section>
       </div>
-    </div>
+    </React.Fragment>
   )
 }
 

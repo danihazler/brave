@@ -71,6 +71,18 @@ class Showreel extends Component {
             <source src={showVideo} type="video/mp4" />
               Your browser does not support HTML5.
           </video>
+          <div className="flex">
+            <div id="arrows-right">
+              <span className="scroll-arrow"></span>
+              <span className="scroll-arrow"></span>
+              <span className="scroll-arrow"></span>
+            </div>
+            <div id="arrows-left">
+              <span className="scroll-arrow"></span>
+              <span className="scroll-arrow"></span>
+              <span className="scroll-arrow"></span>
+            </div>
+          </div>
           <div className="curtain-right">
             <div id="reel" className="flex">
               <span

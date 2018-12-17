@@ -47,7 +47,7 @@ ul {
 }
 .slide-up{
   opacity: 0;
-  transform: translateY(-100%);
+  transform: translateY(-200%);
   transition: all 1s ease-out;
 }
 /* ********** NAV / MENU ********** */
