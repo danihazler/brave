@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import posed from 'react-pose';
 import './Showreel.css';
 
 import blackLogo from "../../../assets/images/black_logo.png";

@@ -87,13 +87,10 @@ nav.flex {
     right:0px;
   }
 }
-/* ********* SHOWREEL NAV ********** */
-.showreel .nav-burger span {
-  background: black;
-}
+/* ********* REGULAR NAV ********** */
 .navbar.flex {
   justify-content: space-between;
-  margin-top: -120px;
+  margin-top: -210px;
   padding: 1rem 4rem;
   width: 100%;
 }
