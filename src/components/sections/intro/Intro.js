@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './Intro.css';
 
 import whiteLogo from "../../../assets/images/white_logo.png"
@@ -18,7 +18,7 @@ const Intro = () => {
           </div>
         </nav>
       </header>
-      <div className="white-bg">
+      <div className="white-bg" id="_pinIntro">
         <section className="intro flex f-column">
           <div id="intro-logo">
             <img src={whiteLogo} alt="Lagardere Logo"/>

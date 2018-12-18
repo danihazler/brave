@@ -31,12 +31,12 @@ class App extends Component {
     .addTo(this.controller);
 
     new ScrollMagic.Scene({
-      triggerElement: "#_intro-trigger",
-      triggerHook: 0.4,
-      duration: 0
+      triggerElement: "#_pinIntro",
+      triggerHook: 0,
+      duration: "30%"
     })
-    .setClassToggle(".greeting", "slide-up")
-    .addTo(this.controller);
+		.setPin("#_pinIntro", {pushFollowers: false})
+		.addTo(this.controller);
   }
 
   render() {

@@ -18,11 +18,12 @@ class Showreel extends Component {
             >
               <img src={blackLogo} alt="Lagardere Logo" />
             </div>
-            <div className="_header">
+            <div>
               <nav className="flex"
                 data-aos="fade-left"
                 data-aos-duration="2000"
                 data-aos-once="true"
+                data-aos-delay="1000"
               >
                 <div className="nav-menu">
                   Menu
@@ -64,6 +65,14 @@ class Showreel extends Component {
               <span className="slide-arrow"></span>
             </div>
           </div>
+          <span
+            className="v-line v-l1"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+            data-aos-anchor-placement="bottom-bottom"
+            data-aos-once="true"
+          >
+          </span>
           <video
             id="showreel"
             width="720"
@@ -75,6 +84,14 @@ class Showreel extends Component {
             <source src={showVideo} type="video/mp4" />
               Your browser does not support HTML5.
           </video>
+          <span
+            className="v-line v-l2"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+            data-aos-anchor-placement="bottom-bottom"
+            data-aos-once="true"
+          >
+          </span>
           <div className="curtain-right">
             <div id="reel" className="flex">
               <span

@@ -2,9 +2,24 @@
 .showreel{
   color: #000;
   position: relative;
-  margin-bottom: 7.5rem;
+}
+.v-line {
+  background-color: #000;
+  position: absolute;
+  height: 30%;
+  width: 1%;
+}
+.v-l1 {
+  right: 15%;
+}
+.v-l2 {
+  left: 15%;
 }
 /* ********** SHOWREEL NAVBAR ********** */
+/* .showreel .navbar {
+  background-color: rgba(255, 255, 255, 0.7);
+  z-index: 5;
+} */
 .showreel .nav-burger span {
   background: black;
 }
@@ -57,8 +72,8 @@ div#reel {
 }
 .slide-arrow {
   display: inline-block;
-  width: 550px;
-  height: 550px;
+  width: 600px;
+  height: 600px;
   border-right: 10px solid black;
   border-bottom: 10px solid black;
   animation: arrow-wave .5s infinite;
@@ -66,7 +81,9 @@ div#reel {
 }
 #arrows-left,
 #arrows-right {
-  bottom: 10%;
+  bottom: 0;
+  top: 0;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -82,10 +99,10 @@ div#reel {
   margin-right: -25%;
 }
 #arrows-left {
-  right: -22%;
+  right: 0;
 }
 #arrows-right {
-  left: -22%;
+  left: 0;
 }
 #arrows-right .slide-arrow {
   transform: rotate(135deg);
